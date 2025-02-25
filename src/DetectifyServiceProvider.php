@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace MarJose123\Detectify;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use MarJose123\Detectify\Commands\DetectifyCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class DetectifyServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('detectify')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_detectify_table')
+            ->hasCommand(DetectifyCommand::class);
     }
 }
