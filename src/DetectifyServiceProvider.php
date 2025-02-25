@@ -2,9 +2,9 @@
 
 namespace MarJose123\Detectify;
 
+use MarJose123\Detectify\Commands\DetectifyCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MarJose123\Detectify\Commands\DetectifyCommand;
 
 class DetectifyServiceProvider extends PackageServiceProvider
 {
